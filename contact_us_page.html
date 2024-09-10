@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title></title>
+  <link rel="stylesheet" href="">
+  <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+  <style>
+    /* Add the updated CSS code here */
+    html {
+            box-sizing: border-box;
+            height: 100%;
+        }
+
+        *, *:before, *:after {
+            box-sizing: inherit;
+        }
+body {
+  font-family: 'Baloo Bhai', cursive;
+  background: url('contactus.jpg');
+
+  color: white;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  height: 100%;
+}
+ .content {
+  padding: 20px;
+  
+  height: calc(100% - 56px);
+} 
+.content-text {
+  font-size: 20px;
+  padding: 20px;
+  margin-left: 30px;
+
+} 
+
+.navbar {
+  background-color: rgb(8, 7, 7);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.navbar img {
+  width: 58px;
+  filter: invert(10%);
+  margin-right: 16px;
+}
+
+.navbar ul {
+  margin-left: 20px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  font-size: 19px;
+}
+
+.navbar li {
+  margin: 0 10px;
+}
+
+.navbar li a {
+  padding: 3px 3px;
+  text-decoration: none;
+  color: white;
+}
+
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-left: 20px; /* Adjust the left margin as needed */
+}
+
+.navbar li {
+  margin: 0 10px;
+}
+/* .nav
+.navbar li a {
+  padding: 3px 3px;
+  text-decoration: none;
+  color: white;
+} */
+.navbar li a:hover,
+.navbar li a.active {
+  text-decoration: underline;
+  color: grey; 
+}
+.btn {
+  font-family: 'Baloo Bhai', cursive;
+  margin: 0 9px;
+  background-color: black;
+  color: white;
+  padding: 4px 14px;
+  border: 2px solid rgb(88, 76, 76);
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgb(36, 34, 34);
+}
+/* 
+.btn {
+  color: white;
+  border-radius: 10px;
+  font-weight: bold;
+} */
+
+.text-container {
+  height: 400px;
+  /* background-color:rgba(29, 31, 107, 0.5); */
+  background-image: url(contact1.webp);
+  padding: auto;
+  text-align: left;
+  color: black;
+  padding: 20px;
+  /* text-align: center; */
+  font-size: 21px;
+  /* margin-top: 2px; */
+}
+
+.moving-text {
+  font-size: 48px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  animation: moveLeftToRight 40s linear infinite;
+  white-space: nowrap;
+  position: relative;
+  font-size: larger;
+  left: -100%;
+}
+    
+@media (max-width: 768px) {
+  .navbar {
+      flex-wrap: wrap;
+      justify-content: space-between;
+  }
+
+  .navbar div {
+      flex-basis: 100%;
+      text-align: left;
+      margin-bottom: 10px;
+      color: white;
+  }
+
+  .navbar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-left: 20px; /* Adjust the left margin as needed */
+}
+
+.navbar li {
+  margin: 0 10px;
+}
+
+}
+
+
+      @media (max-width: 480px) {
+          .navbar {
+              flex-direction: column;
+              /* align-items: center; */
+          }
+
+          .navbar ul {
+              margin-top: 10px;
+          }
+      }
+
+@keyframes moveLeftToRight {
+  0% {
+    left: -100%;
+  }
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+.container {
+  padding: 20px;
+  
+}
+
+#content {
+  margin: 0 auto;
+  max-width: 600px;
+
+}
+
+form {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contactus {
+  background-color:rgba(243, 243, 249, 0.5);
+  padding: 20px;
+  text-align: left;
+  font-size: 19px;
+  margin-top: 50px;
+  color: white;
+}
+
+.contactus h1 {
+  font-size: 29px;
+  text-align: center;
+  margin-bottom: 20px;
+  text-decoration: underline;
+}
+
+.contactus p {
+  font-family: baloo bhai;
+  margin-bottom: 10px;
+}
+
+.contactus h3 {
+  margin-top: 21px;
+  margin-bottom: 10px;
+  text-decoration-line: underline ;
+}
+
+.contactus {
+  position: relative;
+}
+.contactus {
+  position: relative;
+}
+
+.contactus img {
+  margin-right: 10px;
+}
+
+.contactus img:last-child {
+  margin-right: 0;
+}
+
+
+/* .contact-image {
+  position: absolute;
+  top:1290px;
+  width: 550px;
+  height: 350px;
+  right: 150px;
+  border-radius: 8px;
+  border: 2px blue;
+} */
+/* .contact-image {
+  position: absolute;
+  top: 1300px;
+  width: 100%;
+  max-width: 550px;
+  height: auto;
+  right: 150px;
+  left: 800px;
+  margin: 0 auto;
+  border-radius: 8px;
+  border: 2px solid blue;
+}
+
+@media (max-width: 1200px) {
+  .contact-image {
+    right: 7px;
+    bottom: 20px;
+    top: 1440px;
+    left: 290px;
+    width: 450px;
+  }
+}
+
+@media (max-width: 250px) {
+  .contact-image {
+    top: auto;
+    /* bottom: 20px; 
+    left: 500px;
+    transform: translateX(-50%);
+    max-width: 70%;
+  }
+} */
+.contact-image {
+  position: absolute;
+  top: 1450px;
+  width: 100%;
+  max-width: 550px;
+  height: 350px;
+  right: 150px;
+  left: 800px;
+  margin: 0 auto;
+  border-radius: 8px;
+  border: 2px solid blue;
+}
+
+
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .navbar div {
+        flex-basis: 100%;
+        text-align: left;
+        margin-bottom: 10px;
+        color: white;
+    }
+
+    .navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-left: 20px; /* Adjust the left margin as needed */
+}
+
+.navbar li {
+    margin: 0 10px;
+}
+
+}
+@media (max-width: 480px) {
+            .navbar {
+                flex-direction: column;
+                /* align-items: center; */
+            }
+
+            .navbar ul {
+                margin-top: 10px;
+            }
+}
+
+
+
+
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 80%; /* Adjust the width as desired */
+  padding: 10px;
+  border: 2px solid rgb(225, 234, 224);
+  border-radius: 5px ;
+  margin-bottom: 10px;
+  background-color: rgba(36, 47, 62, 0.5); /* Set the background color with transparency */
+}
+input[type="submit"] {
+  background-color: rgba(90, 105, 128, 0.5);; /* Set the background color to transparent */
+  color: #fff;
+  padding: 15px 26px; /* Adjust the padding to increase the button size */
+  border: none;
+  border-radius: 5px black;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: grey /* Set the background color with transparency on hover */
+}
+
+
+
+    /* Add the CSS code here */
+    /* ... */
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <center><img src="medicine logo.jpg" alt=""></center>
+      <div style="flex-grow: 1; text-align: left; font-size: 24px; color: white;">Bharat Medicine Donation</div>
+      <ul>
+        <li><a href="homepage.html">Home</a></li>
+        <li><a href="aboutus.html">About us</a></li>
+        <li><a href="services_for_donation.html">Services</a></li>
+        <li><a href="contact_us_page.html">Contact us</a></li>
+      </ul>
+      <div>
+        <a href="sign up.html"><button class="btn">Sign up</button></a>
+        <a href="Sign in.html"><button class="btn">Sign in</button></a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="text-container">
+    <p class="moving-text" style="font-size:xxx-large;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">Contact Us</p>
+    <p style="margin-left: 20px;">
+      Want to get in touch? We'd love to hear from you. Here's how you can reach us.....
+    </p>
+    <p style="margin-left: 20px;">
+      Thank you for your interest in our services.
+    </p>
+  </div>
+
+  <hr>
+    <div  class="container">
+    
+    <div id="content">
+      <h2>Contact Us</h2>
+      <p>If you have any questions or need assistance, please fill out the form below:</p>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="10" cols="50" required></textarea><br><br>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+
+  <div class="contactus">
+    <h1>Contact Us</h1>
+
+    <p>If you have any questions or feedback, please feel free to reach out to us through the following channels:</p>
+
+    <h3>Email</h3>
+    <p>Email: info@example.com</p>
+
+    <h3>Phone</h3>
+    <p>Phone: +1 123-456-7890</p>
+
+    <h3>Social Media</h3>
+    <p>Connect with us on social media:</p>
+
+    <a href="https://www.google.com" target="_blank">
+      <img src="google_logo.jpg" alt="Google" width="50" height="50">
+    </a>
+    <a href="https://www.facebook.com" target="_blank">
+      <img src="facebook_logo.jpg" alt="Facebook" width="50" height="50">
+
+    </a>
+    <a href="https://www.twitter.com" target="_blank">
+      <img src="twitter_logo.jpg" alt="Twitter" width="50" height="50">
+    </a>
+  </div>
+  <img src="contactbg.jpg" alt="Image" class="contact-image">
+
+  <script src="script.js"></script>
+</body>
+
+</html>

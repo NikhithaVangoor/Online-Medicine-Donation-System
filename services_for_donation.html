@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title></title>
+  <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+  <style>
+     html {
+            box-sizing: border-box;
+            height: 100%;
+        }
+
+        *, *:before, *:after {
+            box-sizing: inherit;
+        }
+
+    /* General styles */
+    /* * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    } */
+    
+    body {
+      font-family: 'Baloo Bhai', cursive;
+      color: black;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Navigation styles */
+  
+        .navbar {
+            background-color: rgb(8, 7, 7);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            /* font-size: 24px; */
+        }
+
+        .navbar img {
+            width: 58px;
+            filter: invert(10%);
+            margin-right: 16px;
+        }
+        /* .content p {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 19px;
+    } */
+        .navbar ul {
+            margin-left: 20px;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            font-size: 19px;
+        }
+
+        .navbar li {
+            margin: 0 10px;
+        }
+
+        .navbar li a {
+            padding: 3px 3px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: grey;
+        }
+        .btn {
+            font-family: 'Baloo Bhai', cursive;
+            margin: 0 9px;
+            background-color: black;
+            color: white;
+            padding: 4px 14px;
+            border: 2px solid grey;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: rgb(36, 34, 34);
+        }
+
+    /* Content styles */
+    .content {
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .content h1 {
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .content p {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .box img {
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .navbar img {
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+
+      .navbar ul {
+        flex-direction: column;
+      }
+
+      .navbar li {
+        margin: 10px 0;
+      }
+
+      .content {
+        padding: 10px;
+      }
+
+      .content h1 {
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+
+      .content p {
+        margin-bottom: 20px;
+      }
+
+      .box {
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <center><img src="medicine logo.jpg" alt=""></center> 
+            <div style="flex-grow: 1; text-align: left; font-size: 24px; color: white;">Bharat Medicine Donation</div>
+            <ul>
+      <ul>
+        <li><a href="homepage.html">Home</a></li>
+        <li><a href="aboutus.html">About us</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="contact_us_page.html">Contact us</a></li>
+      </ul>
+      <div>
+        <a href="sign up.html"><button class="btn">Sign up</button></a>
+        <a href="Sign in.html"><button class="btn">Sign in</button></a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="content">
+    <h1>Let's take a look at What We can do</h1>
+    <img src="donation.jpg" alt="">
+    <p>Our organization collects and distributes medicine donations to those in need. With your support, we can make a positive impact on people's lives.</p>
+
+    <div class="box">
+      <img src="medical-team.jpg" alt="">
+      <h2>Qualified Medical Team</h2>
+      <p>Our team of experienced and dedicated medical professionals ensures that the donated medicines are safe and reach the right individuals.</p>
+    </div>
+
+    <div class="box">
+      <img src="volunteers.jpg" alt="">
+      <h2>Passionate Volunteers</h2>
+      <p>We have a network of enthusiastic volunteers who actively participate in collecting, sorting, and distributing the medicine donations.</p>
+    </div>
+
+    <div class="box">
+      <img src="donation-box.jpg" alt="">
+      <h2>Convenient Donation Process</h2>
+      <p>We provide a hassle-free donation process where you can drop off your unused medicines at our donation centers or request a pickup.</p>
+    </div>
+  </div>
+</body>
+
+</html>

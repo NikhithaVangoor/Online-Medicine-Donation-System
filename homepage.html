@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+    <title>Navigation</title>
+    <style>
+        html {
+            box-sizing: border-box;
+            height: 100%;
+        }
+
+        *, *:before, *:after {
+            box-sizing: inherit;
+        }
+
+        body {
+            
+            color: black;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            height: 100%;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .navbar {
+            font-family: 'Baloo Bhai', cursive;
+            background-color: rgb(8, 7, 7);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+        }
+
+        .navbar img {
+            width: 58px;
+            filter: invert(10%);
+            margin-right: 16px;
+        }
+
+        .navbar ul {
+            margin-left: 20px;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            font-size: 19px;
+        }
+
+        .navbar li {
+            margin: 0 10px;
+        }
+
+        .navbar li a {
+            padding: 3px 3px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: grey;
+        }
+
+        .content {
+            padding: 20px;
+            background: url('bg2.jpg') center center/cover no-repeat;
+            height: calc(100% - 56px);
+        }
+
+        .content-text {
+            font-size: 20px;
+            background-color: rgba(53, 50, 50, 0.8);
+            padding: 20px;
+            margin-left: 30px;
+
+        }
+
+        .content h3 {
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+        }
+
+        .special-font {
+            font-family: Arial, Helvetica, sans-serif, sans-serif;
+            font-size: 19px;
+            color: white;
+            font-style: normal;
+        }
+
+        .btn {
+            font-family: 'Baloo Bhai', cursive;
+            margin: 0 9px;
+            background-color: black;
+            color: white;
+            padding: 4px 14px;
+            border: 2px solid grey;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: rgb(36, 34, 34);
+        }
+
+      
+     @media (max-width: 768px) {
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .navbar div {
+        flex-basis: 100%;
+        text-align: left;
+        margin-bottom: 10px;
+        color: white;
+    }
+
+    .navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-left: 20px; /* Adjust the left margin as needed */
+}
+
+.navbar li {
+    margin: 0 10px;
+}
+
+}
+
+
+        @media (max-width: 480px) {
+            .navbar {
+                flex-direction: column;
+                /* align-items: center; */
+            }
+
+            .navbar ul {
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="medicine logo.jpg" alt="">
+            <div style="flex-grow: 1; text-align: left; font-size: 24px; color: white;">Bharat Medicine Donation</div>
+
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="aboutus.html">About us</a></li>
+                <li><a href="services_for_donation.html">Services</a></li>
+                <li><a href="contact_us_page.html">Contact us</a></li>
+            </ul>
+            <div>
+                <a href="sign up.html"><button class="btn">Sign up</button></a>
+                <a href="Sign in.html"><button class="btn">Sign in</button></a>
+            </div>  
+        </nav>
+    </header>
+    <div class="content">
+        <div class="container">
+            <div class="content-text">
+                <h3>Why Medicine Donation?</h3>
+                <p class="special-font">According to WHO, around 469 million people in India do not have regular access to essential medicines and medical supplies. Barely 20% of the total population can afford the required medical treatments and medicines. In such times, it is necessary to find a way out or at least try to make sure that people in need of medicines and suppliers get access to it. One way is to donate unused medicines.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

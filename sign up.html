@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="wrapper">
+    <div class="form signup">
+      <header>SignUp as Donor</header>
+      <form action="donor_signup.php" method="post">
+        <input type="text"placeholder="User Full name" name="User_name" required>
+        <input type="email" placeholder="Login Id" name="Email_address" required>
+        <input type="password" placeholder="Password" name="Password">
+        <input type="tel" placeholder="Mobile number" maxlength="10" name="Mobile" required>
+        <!-- <input type="text" placeholder="ID proof" required> -->
+        <input type="text" placeholder="Address"name="Address" required>
+        <div class="buttons">
+          <input type="submit" value="Signup" class="signup-button">
+          <input type="reset" value="Reset" class="reset-button">
+        </div>
+      </form>
+    </div>
+    
+    <div class="form signup signup-second">
+      <header>SignUp as NGO</header>
+      <form action="ngo_signup.php" method="post">
+        <input type="text" placeholder="NGO Full name" name="ngo_name" required>
+        <input type="text" placeholder="Owner Full name" name="Owner_name" required>
+        <input type="email" placeholder="Login Id"name="Login_id2" required>
+        <input type="password" placeholder="Password" name="Password2" required>
+        <input type="tel" placeholder="Mobile number" maxlength="10" name="mobile2" required>
+        <!-- <input type="text" placeholder="ID proof" maxlength="15" name="id_proof" required> -->
+        <div class="buttons">
+          <input type="submit" value="Signup" class="signup-button">
+          <input type="reset" value="Reset" class="reset-button">
+        </div>
+      </form>
+    </div>
+  </section>
+</body>
+</html>

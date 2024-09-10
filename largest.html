@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Display Larger Integer</title>
+</head>
+<body>
+<h2>Enter two integers:</h2>
+<input type="number" id="num1" placeholder="Enter first number">
+<input type="number" id="num2" placeholder="Enter second number">
+<button onclick="displayLarger()">Display Larger</button>
+<p id="result"></p>
+<script>
+function displayLarger() {
+const num1 = parseInt(document.getElementById('num1').value);
+const num2 = parseInt(document.getElementById('num2').value);
+if (isNaN(num1) || isNaN(num2)) {
+document.getElementById('result').innerText = "Please enter valid integers.";
+} else if (num1 === num2) {
+document.getElementById('result').innerText = "Both numbers are equal.";
+} else if (num1 > num2) {
+document.getElementById('result').innerText = "The larger number is: " + num1;
+} else {
+document.getElementById('result').innerText = "The larger number is: " + num2;
+}
+}
+</script>
+</body>
+</html>
